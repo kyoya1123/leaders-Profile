@@ -8,12 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        imageView.isHidden = true
+        nameLabel.isHidden = true
     }
 
+    @IBAction func didTapButton() {
+        imageView.isHidden = false
+        nameLabel.isHidden = false
+    }
 
 }
 
